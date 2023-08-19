@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel</title>
+    <style>
+        .container {
+            width: 600px;
+            padding: 20px;
+            margin: auto;
+            border: 2px solid red;
+            overflow: hidden; /* Clear float */
+       border-radius:5%;
+        }
+        .content1,
+        .content2,
+        .content3,
+        .content4 {
+            margin: 10px;
+            padding: 10px;
+        }
+        .content2,
+        .content3,
+        .content4 {
+            float: left;
+            width: calc(30.33% - 20px); /* Adjust for margins */
+            box-sizing: border-box; /* Include padding in width */
+            border: 2px solid black;
+            background: #ccc;
+        }
+.content1{
+background-color:yellow;
+border-radius:10px;
+}
+        .content2 {
+border-radius: 10px;
+            
+background-color:blue;
+        }
+        .content3 {
+            
+            border-radius: 10px;
+            
+background-color:green;
+        }
+        .content4 {
+          
+            border: 2px solid black;
+background-color:red;
+border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus veniam perspiciatis soluta exercitationem quisquam maxime commodi iste accusamus quo?</div>
+        <div class="content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus veniam perspiciatis soluta exercitationem quisquam maxime commodi iste accusamus quo?</div>
+        <div class="content3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus veniam perspiciatis soluta exercitationem quisquam maxime commodi iste accusamus quo?</div>
+        <div class="content4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus veniam perspiciatis soluta exercitationem quisquam maxime commodi iste accusamus quo?</div>
+    </div>
+</body>
+</html>
